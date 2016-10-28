@@ -77,11 +77,8 @@ def download_like_metadata(userID):
     return likeData
 
 def main():
-    print "This needs your userID to work..."
-    print "1. go to vine.co"
-    print "2. log in"
-    print "3. click 'Your Profile'"
-    print "4. Copy the number from the url\n"
+    print "This needs a userID to work..."
+    print "Go to the profile page for any viner (including yourself) and get the number in the url"
 
     userID = str(input('enter your userID:  '))
     likeData = download_like_metadata(userID)
