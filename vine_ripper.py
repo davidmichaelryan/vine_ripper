@@ -46,7 +46,7 @@ def rip_vines(likeData):
         postId = str(like['postId'])
         username = str(like['username'])
         #Remove characters in username which can affect file path, resulting in an error (some characters may not be accounted for here)
-        username = username.translate(None, "[!@#$/\||:?*&^%~]")
+        username = username.translate(None, "[!@#$/\||:?*&^%~<>{}=+]")
         avatarUrl = str(like['avatarUrl'])
         videoUrl = str(like['videoUrl'])
         thumbnailUrl = str(like['thumbnailUrl'])
